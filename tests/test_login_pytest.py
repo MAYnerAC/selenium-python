@@ -18,6 +18,10 @@ def driver():
     yield driver
     driver.quit()
 
+
+
+
+
 def test_admin_login(driver):
     driver.get("https://localhost:44357/")
     time.sleep(2)
@@ -51,6 +55,10 @@ def test_admin_login(driver):
     logout_link.click()
     time.sleep(2)
     print("Cierre de sesión como administrador exitoso")
+
+
+
+
 
 def test_provider_login(driver):
     driver.get("https://localhost:44357/")
